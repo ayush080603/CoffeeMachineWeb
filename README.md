@@ -1,25 +1,25 @@
-# ☕ Coffee Machine Project
+# ☕ Coffee Machine Web Project
 
-This is a simple command-line Coffee Machine simulation built using Python and Object-Oriented Programming concepts. The user can order coffee (latte, espresso, or cappuccino), insert virtual coins, and the machine will handle transactions, check resources, and serve the drink.
+This is a **web-based Coffee Machine simulation** built using **HTML, CSS, JavaScript, and Python (OOP)**.  
+The project simulates a coffee machine where users can order coffee (latte, espresso, or cappuccino), and the machine manages resources, transactions, and displays the status in a clean **web UI**.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python 3.x**
-- Object-Oriented Programming (OOP)
-- Terminal/Command-Line interface
+- **Frontend**: HTML, CSS, JavaScript  
+- **Backend Logic**: Python 3.x (OOP concepts)  
+- **Simulation**: Coffee resource management & transactions  
 
 ---
 
 ## 🚀 Features
 
-- Order from 3 types of coffee: `espresso`, `latte`, or `cappuccino`
-- Simulated coin input (quarters, dimes, nickels, and pennies)
-- Calculates total inserted money and returns change if applicable
-- Checks if ingredients are sufficient for the selected coffee
-- Tracks resources and handles unavailable options
-- Built fully in Python using OOP principles with modular classes:
+- Interactive **web interface** to order coffee  
+- Coffee options: `espresso`, `latte`, `cappuccino`  
+- Displays machine status (water, milk, coffee, and profit)  
+- Option to reset the machine to initial resources  
+- Uses **OOP in Python** for core logic with classes:
   - `Menu`
   - `CoffeeMaker`
   - `MoneyMachine`
@@ -28,37 +28,59 @@ This is a simple command-line Coffee Machine simulation built using Python and O
 
 ## 📸 Output Screenshot
 
-![Coffee Machine Output](https://raw.githubusercontent.com/ayush080603/CoffeeMachine/main/Screenshot%2001.png)
+![Coffee Machine Web](https://raw.githubusercontent.com/ayush080603/CoffeeMachineWeb/main/MachineWeb.png)
 
 ---
 
 ## 📁 Project Structure
 
-CoffeeMachine/
-│
-├── coffee_maker.py # Handles the machine's coffee-making functionality
-├── main.py # Entry point of the application
-├── menu.py # Manages available menu items
-├── money_machine.py # Manages money transactions
-└── Screenshot 01.png # Sample Output Screenshot
+CoffeeMachineWeb/  
+│  
+├── **coffee_maker.py** → Handles the machine's coffee-making functionality  
+├── **main.py** → Entry point of the application  
+├── **menu.py** → Manages available menu items  
+├── **money_machine.py** → Handles money transactions  
+├── **index.html** → Frontend layout of the coffee machine  
+├── **styles.css** → Styling for the UI  
+├── **script.js** → Frontend interactivity  
+├── **MachineWeb.png** → Sample output screenshot  
+└── **README.md** → Project documentation  
 
 ---
 
 ## 💡 How to Run
 
+### 🔹 Run Python logic in terminal
 1. **Clone the repository**:
-
     ```bash
-    git clone https://github.com/ayush080603/CoffeeMachine.git
-    cd CoffeeMachine
-2. **Run the project**:
-
+    git clone https://github.com/ayush080603/CoffeeMachineWeb.git
+    cd CoffeeMachineWeb
+    ```
+2. **Run the simulation**:
     ```bash
     python main.py
-3. **Follow the prompts in the terminal to interact with the coffee machine**.
+    ```
+   Follow the terminal prompts to interact with the coffee machine.
+
+---
+
+### 🔹 Run Web Version
+1. Open `index.html` in your browser.  
+2. Interact with the **Coffee Machine UI** (order coffee, reset machine, check resources).  
+
+---
 
 ## 📚 Learning
-This project was created as part of my learning journey to understand Python's Object-Oriented Programming and modular coding techniques.
+
+This project helped me explore:
+- **Object-Oriented Programming (OOP) in Python**  
+- **Frontend + Backend integration basics**  
+- How to simulate real-world systems with programming  
+
+---
 
 ## 🙌 Acknowledgement
-Built with guidance from the 100 Days of Code - Python Bootcamp by Dr. Angela Yu.
+
+Built as part of my **Python OOP learning journey** and later extended into a **Web UI project**.  
+Inspired by the *100 Days of Code - Python Bootcamp by Dr. Angela Yu*.
+
