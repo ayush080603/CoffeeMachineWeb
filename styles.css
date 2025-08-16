@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #F5F5DC, #7B3F00);
+    min-height: 100vh;
+    padding: 2rem;
+    color: #111827;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #92400e;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #6b7280;
+}
+
+/* Machine Status */
+.machine-status {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.machine-status h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #111827;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resource {
+    text-align: center;
+}
+
+.resource .value {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #059669;
+}
+
+.resource .label {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* Reset Button */
+#reset-btn {
+    background-color: #1f2937;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#reset-btn:hover {
+    background-color: #374151;
+}
+
+/* Menu Section */
+.menu h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #111827;
+}
+
+.drinks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.drink-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease-in-out;
+}
+
+.drink-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.drink-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.drink-card .price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #059669;
+    margin-bottom: 0.75rem;
+}
+
+.ingredients p {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin: 0.2rem 0;
+}
+
+/* Order Button */
+.order-btn {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+    background-color: #374151;
+}
+
+/* Input Fields */
+.coin-inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.coin-input label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+}
+.payment {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.payment h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #111827;
+}
+
+.payment-info {
+    margin: 1rem 0;
+    font-size: 1.05rem;
+    color: #1f2937;
+}
+/* Reuse global button styles - already present */
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.btn {
+    background: #1f2937;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background: #374151;
+}

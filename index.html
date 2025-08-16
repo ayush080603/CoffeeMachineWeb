@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>☕ Coffee Machine</h1>
+            <p>Welcome to our virtual coffee shop!</p>
+        </header>
+
+        <!-- Machine Status -->
+        <section class="machine-status">
+            <h2>Machine Status</h2>
+            <div class="resources">
+                <div class="resource">
+                    <span class="value" id="water">300ml</span>
+                    <span class="label">Water</span>
+                </div>
+                <div class="resource">
+                    <span class="value" id="milk">200ml</span>
+                    <span class="label">Milk</span>
+                </div>
+                <div class="resource">
+                    <span class="value" id="coffee">100g</span>
+                    <span class="label">Coffee</span>
+                </div>
+                <div class="resource">
+                    <span class="value" id="profit">₹0.00</span>
+                    <span class="label">Profit</span>
+                </div>
+            </div>
+            <button id="reset-btn">Reset Machine</button>
+        </section>
+
+        <!-- Coffee Menu -->
+        <section class="menu">
+            <h2>Coffee Menu</h2>
+            <div class="drinks">
+                <!-- Latte -->
+                <div class="drink-card" data-drink="latte">
+                    <h3>Latte</h3>
+                    <p class="price">₹20</p>
+                    <div class="ingredients">
+                        <p>Water: 200ml</p>
+                        <p>Milk: 150ml</p>
+                        <p>Coffee: 24g</p>
+                    </div>
+                    <button class="order-btn">Order latte</button>
+                </div>
+
+                <!-- Espresso -->
+                <div class="drink-card" data-drink="espresso">
+                    <h3>Espresso</h3>
+                    <p class="price">₹15</p>
+                    <div class="ingredients">
+                        <p>Water: 50ml</p>
+                        <p>Milk: 0ml</p>
+                        <p>Coffee: 18g</p>
+                    </div>
+                    <button class="order-btn">Order espresso</button>
+                </div>
+
+                <!-- Cappuccino -->
+                <div class="drink-card" data-drink="cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p class="price">₹30</p>
+                    <div class="ingredients">
+                        <p>Water: 250ml</p>
+                        <p>Milk: 50ml</p>
+                        <p>Coffee: 24g</p>
+                    </div>
+                    <button class="order-btn">Order cappuccino</button>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- Payment Section -->
+<div class="payment" id="payment-section" style="display: none;">
+    <h2 id="payment-title">💰 Payment</h2>
+    <div class="coin-inputs">
+        <div class="coin-input">
+            <label>₹1 Coin</label>
+            <input type="number" id="oneRupee" min="0" value="0">
+        </div>
+        <div class="coin-input">
+            <label>₹2 Coin</label>
+            <input type="number" id="twoRupee" min="0" value="0">
+        </div>
+        <div class="coin-input">
+            <label>₹5 Coin</label>
+            <input type="number" id="fiveRupee" min="0" value="0">
+        </div>
+        <div class="coin-input">
+            <label>₹10 Coin</label>
+            <input type="number" id="tenRupee" min="0" value="0">
+        </div>
+    </div>
+
+    <div class="payment-info">
+        <p>Total Inserted: <span id="total-paid">₹0.00</span></p>
+        <p>Required: <span id="required-amount">₹0.00</span></p>
+    </div>
+        <div class="action-buttons">
+        <button id="pay-btn" class="btn">Make Payment</button>
+        <button id="cancel-btn" class="btn">Cancel</button>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
